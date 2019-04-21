@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block title %}
+
+{% endblock %}  
+
+
+
+</head>
+<body>
+
+
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="logo">
+							<a href="#"><img src="{% static 'images/logo.png' %}" alt=""></a>
+						</div>
+						<nav class="main_nav">
+							<ul>
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="/about">About us</a></li>
+								
+								
+								<li><a href="/contact">Contact</a></li>
+							</ul>
+						</nav>
+						<div class="phone_num ml-auto">
+							<div class="phone_num_inner">
+								<img src="{% static "images/phone.png" %}" alt=""><span>652-345 3222 11</span>
+							</div>
+						</div>
+						<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo">
+				<a href="#">
+					<div class="logo_container d-flex flex-row align-items-start justify-content-start">
+						<div class="logo_image"><div><img src="{% static 'images/logo.png' %}" alt=""></div></div>
+					</div>
+				</a>
+			</div>
+			<ul>
+				<li class="menu_item"><a href="/">Home</a></li>
+				<li class="menu_item"><a href="/about">About us</a></li>
+				
+				<li class="menu_item"><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu_phone"><span>call us: </span>652 345 3222 11</div>
+	</div>
+	
+	<!-- Home -->
+
+	{% block home %}
+	{% endblock %}
+
+	<!-- Home Search -->
+	
+
+	<!-- Recent -->
+	{% block listings %}
+	{% endblock %}
+	
+		
+			
+					
+						
+							{% block enq_form %}
+							{% endblock %}
+						
+				
+				
+		
+
+
+	
+
+	
+
+
+	
+
+	<!-- Footer -->
+
+	<footer class="footer" style="padding-top:4%">
+			<div class="footer_main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="footer_logo"><a href="#"><img src="{% static 'images/logo_large.png' %}" alt=""></a></div>
+							</div>
+							<div class="col-lg-9 d-flex flex-column align-items-start justify-content-end">
+								<div class="footer_title">Latest Properties</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 footer_col">
+								<div class="footer_about">
+									<div class="footer_about_text">Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.</div>
+								</div>
+							</div>
+							<div class="col-lg-3 footer_col">
+								<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
+									<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_1.jpg' %}" alt=""></div></div>
+									<div class="footer_latest_content">
+										<div class="footer_latest_location">Miami</div>
+										<div class="footer_latest_name"><a href="#">Sea view property</a></div>
+										<div class="footer_latest_price">$ 1. 234 981</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+		
+		<div class="footer_bar" style="padding-top:5%">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer_bar_content d-flex flex-row align-items-center justify-content-start">
+							<div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+							<div class="footer_nav">
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/about">About us</a></li>
+									<li><a href="/listings">Properties</a></li>
+									
+									<li><a href="/contact">Contact</a></li>
+								</ul>
+							</div>
+							<div class="footer_phone ml-auto"><span>call us: </span>652 345 3222 11</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+{% block jsscript %}
+
+{% endblock %}
+</body>
+</html>
