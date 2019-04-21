@@ -187,9 +187,16 @@
 												<div class="recent_item_price">{{item.property_rate}}</div>
 											</div>
 											<div class="recent_item_footer d-flex flex-row align-items-center justify-content-start">
-												<div><div class="recent_icon"><img src="{% static 'images/icon_1.png' %}" alt=""></div><span>650 Ftsq</span></div>
-												<div><div class="recent_icon"><img src="{% static 'images/icon_2.png' %}" alt=""></div><span>3 Bedrooms</span></div>
-												<div><div class="recent_icon"><img src="{% static 'images/icon_3.png' %}" alt=""></div><span>3 Bathrooms</span></div>
+												{% if item.property_size %}
+												<div><div class="recent_icon"><img src="{% static 'images/icon_1.png' %}" alt=""></div><span>{{item.property_size}}</span></div>
+												{% endif %}
+												{% if item.property_rooms %}
+												<div><div class="recent_icon"><img src="{% static 'images/icon_2.png' %}" alt=""></div><span>{{item.property_rooms}} Rooms</span></div>
+												{% endif %}
+												{% if property.property_bathrooms %}
+
+												<div><div class="recent_icon"><img src="{% static 'images/icon_3.png' %}" alt=""></div><span>{{property.property_bathrooms}} Bathrooms</span></div>
+												{% endif %}
 											</div>
 										</div>
 									</div>
